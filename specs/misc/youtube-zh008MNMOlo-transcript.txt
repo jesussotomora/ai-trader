@@ -1,0 +1,474 @@
+[00:00] I built three trading bots to trade stock
+with $10,000 of my own money.
+[00:05] One safe, one risky,
+and one just absolutely insane.
+[00:12] In today's video, I'm going to show you
+the process of how I build these bots.
+[00:15] All the technology I used
+and the results of giving it $10,000.
+[00:21] Well,
+if you're new here, my name is Lewis,
+[00:23] and I'm on a mission to inspire developers
+and tech enthusiasts.
+[00:27] Let's go.
+[00:30] Oh, okay.
+[00:31] So I would never consider myself
+a finance guy, but,
+[00:35] I mean, come on, How hard can it be?
+[00:37] Buy high, sell low.
+[00:41] But surprise, surprise,
+it's a lot more complicated than that.
+[00:45] So I read up on Trading Strategies
+in a short period of time.
+[00:48] How could I possibly make more money
+than I put in?
+[00:51] And from my initial research,
+no one really knows.
+[00:54] So you just kind of make it up on the spot
+until you get so rich
+[00:58] you can wear a suit to work.
+[01:00] But here's
+how I'm going to make my fortune.
+[01:05] I'm going to create three trading bots
+that all have different strategies
+[01:08] going from fairly safe all the way
+to basically burning my money away.
+[01:12] The first one is a mix of momentum
+trading and value trading.
+[01:15] It makes decisions
+on a preset amount of safe stocks and buys
+[01:19] or sells, depending on how the stock
+is moving on average.
+[01:22] The second bot scans
+for news articles on a company.
+[01:25] If the news is good,
+we buy or of a spot and we own that stock,
+[01:29] we immediately sell the third buy.
+[01:33] I can't even believe I'm doing this.
+[01:36] Selects
+a random stock out of every stock listed.
+[01:38] Grabs the latest news article
+about the stock that was picked and uses
+[01:42] AI to determine what Taylor Swift
+lyric is the most related.
+[01:45] If the lyric is happy,
+we put half the money in.
+[01:47] When we hold that stock, we continue
+grabbing news articles about the stock
+[01:50] and if the lyrics match
+a negative sentiment, we sell everything.
+[01:54] Swift Trade 1.0.
+[01:58] This is what I do for a living.
+[01:59] You're probably wondering
+who would be so stupid to do such a thing.
+[02:02] While the sponsor of today's video
+data stocks is thinking the same thing.
+[02:06] I'm using data stocks Astro
+DB to power this application,
+[02:10] and when it comes to speed,
+it's 100% needed When working
+[02:13] with databases with vector values
+built on top of Cassandra Astra.
+[02:16] DB helps you scale your application
+[02:19] without the worries of scaling,
+slowing you down with global scale,
+[02:22] with serverless architecture, enterprise
+level security, and no vendor lock in.
+[02:27] You can literally create a database
+[02:28] and just a couple of clicks
+and it has a bunch of SDK supported
+[02:32] for Python Node Go or even just a C ally.
+[02:35] So if you're familiar with Cassandra,
+then no explanation needed.
+[02:38] But if you're like me and don't understand
+Cassandra, it's still so simple
+[02:42] to connect your application
+and get something up and running.
+[02:44] In minutes.
+[02:45] I create a Chrome extension
+that lets you talk to YouTube
+[02:47] videos easily with data stacks
+primarily powering the entire thing.
+[02:51] And it was so easy to just
+build an application quickly
+[02:53] that require complex components
+like a vector database.
+[02:57] It's also easy to include
+in your existing projects.
+[02:59] Create a Cassandra vector search
+[03:01] for a small business in your area
+and have a for facing chat.
+[03:04] It's actually shockingly simple.
+[03:06] Leaders in every industry are using data
+stacks with Astra DB to power their A.I.
+[03:10] applications, and you can too
+with their extremely generous free tier.
+[03:14] Thanks data
+[03:15] stacks for enabling my reckless behavior
+by being the sponsor of today's video.
+[03:19] If you're building an AI app
+or want to build an AI app, please
+[03:22] click the link in the description below
+[03:24] to learn more about how you can use
+data stacks in your next project.
+[03:31] So here's how the first trading bot works
+in detail.
+[03:34] Every minute
+[03:34] the bot looks at a predefined set of safe
+stocks, then looks at the current price.
+[03:38] The average price
+within the last 15 minutes
+[03:41] and the p e ratio, which is the companies
+earnings to stock price ratio.
+[03:45] If a stock is above the average price and
+the p e ratio is lower than the average,
+[03:49] we buy, we then check to see
+if the moving average is on the way down.
+[03:53] If it is, we sell
+and then rinse and repeat.
+[03:56] I'm of course
+using Python for all three of these bots
+[03:58] and unfortunately
+I'm using interactive brokers,
+[04:01] which is the only option I have
+as a Canadian.
+[04:03] Like really?
+[04:05] Also,
+the interactive brokers API is really bad,
+[04:08] but thanks to the magic of open source,
+[04:10] someone made a package
+that makes it a little bit more bearable.
+[04:12] What's funny
+is that the least exciting bot to make
+[04:15] is actually the hardest to make.
+[04:17] There's a lot of technical
+mathematical finance jargon
+[04:20] that I just don't really care about, so
+I have to look it up, how to implement it.
+[04:24] You know,
+[04:30] so when you're building one
+[04:31] of these bots, the first thing that you do
+is you back test.
+[04:34] Backtesting
+is where you take your strategy
+[04:36] and see how it performs
+on historical data.
+[04:38] In Python,
+there's a framework I'm using called Back
+[04:41] Trader that lets me implement my strategy
+and then use it against historical data.
+[04:44] And since this is only going to be less
+than a week, I'm going to only get
+[04:48] the last couple of months of data
+from a set of stocks
+[04:55] that I spent so long on this at.
+[04:58] Seriously ridiculous.
+[04:59] So let's test it.
+[05:04] Okay.
+[05:05] Looks like we need some improvements.
+[05:07] Sometimes it's
+just the numbers that need altered.
+[05:09] So a lot of these backtesting libraries
+let you optimize these numbers by running
+[05:13] them all in different combinations
+and then picking out the best.
+[05:16] So let's optimize 25 different periods.
+[05:19] 30 different overbought thresholds
+and three different oversold thresholds.
+[05:24] That means that we're testing over 22,500
+different combinations.
+[05:29] Let's get started.
+[05:35] So for reference,
+[05:36] I have 24 different cores on my computer
+[05:39] and use them all in parallel
+to get this running as fast as possible.
+[05:43] It was seriously so long and it took over
+25 minutes to run with all of these.
+[05:47] So insane.
+[05:49] And the worst part is that the best return
+[05:51] I got was like $23,
+but that's $23 doing nothing.
+[05:55] So I'll do it with these parameters right
+here.
+[05:57] Usually with save or stocks,
+you plan on selling in like a year
+[06:00] or ten years
+by instead I'm doing in a week.
+[06:03] So honestly, $23 honestly might be a win.
+[06:06] Let's just convert it into the interactive
+brokers code and then run it.
+[06:15] The second
+[06:15] bar scans for news articles on companies
+and the news is good.
+[06:19] We look up the company
+that it may be related to and then we buy.
+[06:22] If it's bad and we own that stock,
+we immediately sell.
+[06:25] And this is how we can test.
+[06:26] How does the news affect the stock market?
+[06:31] Something I wasn't expecting was
+how closed
+[06:34] all information is basically everywhere
+after the whole Twitter
+[06:37] and Reddit API situation
+everywhere is doing it now,
+[06:41] so it looks like I'm forking up
+some more cash.
+[06:46] First, I downloaded the list of stocks
+[06:47] on NASDAQ and New York Stock Exchange.
+[06:51] I used to open again
+to generate a description for each stock.
+[06:54] Then embed this description
+so I can vector, search it later,
+[06:58] upload to Astra and we're good to go easy.
+[07:01] All right, let's test it out.
+[07:03] Who is ten?
+[07:07] Awesome.
+[07:08] So it seems to be working.
+[07:09] Coding with Lewis builds
+awesome trading boss with AI.
+[07:12] Okay, cool.
+[07:14] Then I plugged in and use API
+so I can scan for news
+[07:17] and identify what stock is likely going to
+be talked about or affected.
+[07:21] Now the back trading strategy,
+[07:24] this one is going to be
+a little bit more tough
+[07:25] considering there's a whole bunch of data
+outside of just the stock itself.
+[07:29] Also,
+I don't want to use any more API credits.
+[07:32] It was already expensive as it is,
+and I'm pretty much running out.
+[07:35] So I'll write a script
+to give me the date.
+[07:37] Headline sentiment
+and stock ticker is affiliated with.
+[07:40] I just got the NVIDIA 49
+[07:42] and it's really coming in clutch right now
+with a machine learning aspect of it.
+[07:45] And just because I'm curious, I'm
+speaking to the final results here, 655
+[07:50] positive articles,
+300 neutrals and 550 negatives.
+[07:54] Wow. Bummer.
+[07:56] All right.
+[07:57] This testing shouldn't be too hard.
+[08:01] So it was pretty hard.
+[08:03] So I have this set up here
+where I can just put in a stock ticker
+[08:06] and I'll use a sentiment analysis
+based off of what I've done.
+[08:09] I'll just do s box like Starbucks.
+[08:11] It's actually funny
+because Starbucks did really well lately,
+[08:14] so it was climbed up
+after a massive thing.
+[08:17] Which insane? $102.
+[08:19] So imagine if five days later I sold it.
+[08:22] Let's try Tesla. I'd be a crazy one here.
+[08:26] Okay.
+[08:26] Even there you make money and do.
+[08:29] Oh, wow.
+[08:29] That's actually a crazy, crazy thing.
+[08:32] I mean, to be fair, Elon
+is always getting himself into some crap.
+[08:36] Absolutely insane.
+[08:37] Okay, let's convert this into interactive
+broker code, and we're off
+[08:40] to the races.
+[08:48] Here's what we have to do.
+[08:49] We select a random stock at every stock
+listed using the same news API.
+[08:53] Like last time we grab the five
+most recent articles.
+[08:56] We embed the articles and have data stocks
+match out with the Taylor Swift lyric
+[09:00] that relates to it the most.
+[09:01] We then determine
+if this lyric is positive or negative.
+[09:04] If it's positive, we buy as much stock
+as we can, otherwise it's time to sell.
+[09:10] And I can't even believe
+that we're doing this. Buy
+[09:14] less, build
+[09:21] First Less Locked Down.
+[09:23] The Taylor Swift Lyrics.
+[09:24] This one was surprisingly hard to find,
+but Alisal or a dash of data
+[09:29] provided it all on GitHub
+and it only has 17 stars.
+[09:32] An absolute legend.
+[09:34] She literally has no idea
+how much she's just helping you right now.
+[09:37] Now separate all the lines of each lyric.
+[09:40] For further reference for myself,
+I'll add what album and song there from
+[09:43] now to save herself some time.
+[09:45] We can just do the sentiment analysis
+on every single lyric now
+[09:48] so we can save it
+and ask her to be in bed.
+[09:50] The lyrics and save to a new column
+[09:53] and push up in batches
+to ask her to be an actor.
+[09:56] A first test.
+[09:58] Awesome.
+[09:59] Grab her existing list of stocks,
+set up a function that pick one out
+[10:02] random so I can grab and use data
+from and good news pun intended
+[10:06] is that we already have
+the news API set up so we can just reuse
+[10:10] a lot of the functions there.
+[10:11] Now let's get some back test started.
+[10:13] How I tested
+this was similar to the new sentiment,
+[10:16] but it's a bit harder
+considering us all random sometimes.
+[10:19] It did really well, sometimes it didn't.
+[10:22] And there's a thousand of stocks
+available to choose from.
+[10:24] So I'm thinking
+I'm satisfied with my testing.
+[10:27] Let's just convert to interactive brokers
+code and call it a day.
+[10:33] So it's the next day.
+[10:36] I have all three bots here
+all ready to go.
+[10:41] Can I press the button?
+[10:43] Here we go.
+[10:53] Oh, Mid-Wicket.
+[11:00] Oh. Oh, oh.
+[11:21] So I was only able to run them
+for about three
+[11:24] or four days because I had so many issues
+when I actually deploy that.
+[11:28] But more on that later.
+[11:29] For now, let's get into the results.
+[11:31] So for bot one, only
+two stocks were purchased.
+[11:34] Duke Energy was bought
+the last day of trading, 16
+[11:37] shares at $90.09,
+but a total of $1,441.44.
+[11:43] We then sold like 2 hours
+later for $89.66 at a loss.
+[11:48] So with this stock,
+we ended up losing $6.88 with Mara.
+[11:53] We ended up buying 24 shares at $9.38
+[11:56] totaling to $225.24.
+[12:00] We then sold that $10.22, meaning
+we made a profit
+[12:04] of $20.16 combined both together.
+[12:07] And we actually made $13.28.
+[12:10] I mean,
+I wasn't really going to be surprised
+[12:12] that bought number one wasn't
+[12:13] going to cause significant loss or gain,
+but it was fun to do either way.
+[12:17] We bought over nine stocks, GameStop,
+we bought 22 shares at $12.76
+[12:22] and then sold at $13.23,
+meaning we made a profit of $10.15.
+[12:28] The Grinder app.
+[12:29] We bought 46 shares at $6.14
+and then sold at
+[12:33] $6.76, giving us a profit of $28.29.
+[12:38] Take-Two Interactive.
+[12:39] We bought only one share, $153.94,
+and then sold for $154.
+[12:45] This was a last minute trade,
+so we only made a $0.06 profit.
+[12:48] The Insulet Corp, we bought one
+share at $170.05
+[12:52] and sold for $174.26,
+[12:55] giving us a profit of $4.22
+Hudson Pacific Properties.
+[12:59] We bought 50 shares for $5.63 and sold
+[13:03] $5.73, giving us a $4.80 profit.
+[13:07] AT&T, we bought 18 shares at $15.56
+[13:11] and sold for $15.78,
+giving us a $3 and 90 $0.01 profit.
+[13:15] Astra space.
+[13:16] We bought 195
+stocks at $1 and four for $0.08
+[13:21] and then selling at $1 and four for $0.02.
+[13:24] This means we got a loss at a dollar
+and $0.33.
+[13:27] Hudson Global
+we bought 18 shares at $15.40
+[13:30] and then sold at $15.47,
+giving us a $1 and $26 profit.
+[13:35] Molson Coors Beer.
+[13:36] We bought four stocks at $59.65
+[13:40] and then sold for $59 and 66 one cents,
+giving us a four sound profit.
+[13:44] And the part that you're probably waiting
+for the Taylor Swift bottle
+[13:48] here, the results of that.
+[13:48] So we actually only ever bought two stocks
+during our Taylor Swift bot run.
+[13:53] I'm thinking maybe this was because
+of the limited data from when the stocks
+[13:56] were initially bought,
+but the first one was Nuveen Global.
+[13:59] Then this article called JT
+stayed in the game with Nuveen Global High
+[14:04] Income Fund.
+[14:05] Somehow related to Stay beautiful,
+Stay Beautiful from the song Stay
+[14:08] Beautiful from the original Taylor Swift
+album came up.
+[14:11] Not sure why, but it went with it.
+[14:13] So we ended up buying 101 shares at $11.22
+[14:17] and then sold at $11.20,
+which means that we lost $2.02.
+[14:23] Then it randomly chose at X Corp
+that leases railcars to companies.
+[14:27] So again, from the album Taylor Swift,
+it picked out the lyrics.
+[14:30] When you think Tim McGraw from the song
+Tim McGraw and then bought ten shares
+[14:35] at $108.63 and then eventually
+[14:38] sold at $110.87,
+[14:41] giving us a profit of $22.45.
+[14:45] That's right.
+[14:46] We made money off this real money.
+[14:48] So after all is said and done, all three
+of our boss brought in a combined $109.35.
+[14:54] This is from around 3 to 4 days of active
+[14:56] trading and between 13 different stocks,
+but not all happy.
+[15:00] The $109.35 accounts
+for commissions and fees included.
+[15:04] But I also had to buy
+a lot of subscriptions to access real time
+[15:08] market data.
+[15:09] So interactive brokers
+automatically took $117.70 off.
+[15:13] So if you actually want to include
+[15:15] that in your portfolio,
+we actually lost $8.35 by it.
+[15:28] I can only get
+because you keep tuning in to my YouTube
+[15:31] shorts, my long form videos
+and all my other socials.
+[15:35] Coding with Lewis is my full time job
+as well as well as full time job.
+[15:39] Who helps out of these videos?
+[15:41] And to me, that's just beyond insane.
+So thank you.
+[15:44] Thank you so much
+for supporting me on my journey.
+[15:47] We're planning a special event
+in our Discord Channel,
+[15:49] so make sure you check it out
+in the description below to find out more.
+[15:52] If you like videos like this
+where I actually build things,
+[15:55] then check out my Reddit bot
+which builds those Reddit TikTok videos
+[15:58] that you always see as well as my news
+API bot that reports the news to you.
