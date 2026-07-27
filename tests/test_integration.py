@@ -1,9 +1,11 @@
+from unittest.mock import patch, MagicMock
 from src.models.schemas import PortfolioState, SignalAction, HistoricalBar, TradeSignal
 from src.data.news_scraper import NewsScraperService, ArticleData
 from src.compliance.prompt_builder import PromptPackageBuilder, ResponseParser
 from src.risk.risk_manager import RiskManager
 from src.engine.council import AdvisoryCouncil
 from src.engine.backtest import BacktestEngine
+from src.brokers.alpaca_adapter import AlpacaAdapter
 
 
 def test_full_pipeline_flow(tmp_path):
@@ -86,4 +88,29 @@ def test_integration_with_backtest_engine():
     result = engine.run_simulation(ticker="AMD", starting_capital=2000.0, bars=bars, signals=signals)
     assert result.total_return_pct > 0
     assert result.win_rate_pct == 100.0
+
+
+@patch("requests.post")
+def test_alpaca_adapter_integration(mock_post):
+    mock_response = MagicMock()
+    mock_response.status_code = 200
+    mock_response.json.return_value = {"id": "ORD_TEST_99", "status": "accepted"}
+    mock_post.return_value = mock_response
+
+    # Signal & Risk check
+    signal = TradeSignal(
+        ticker="AAPL", action=SignalAction.BUY, confidence_score=85.0,
+        stop_loss=170.0, take_profit=200.0, reasoning_thesis="Buy signal",
+        invalidation_criteria="N/A", advisor_model="Claude-3.5-Sonnet"
+    )
+    risk_mgr = RiskManager()
+    portfolio = PortfolioState(account_id="A1", cash_balance=5000.0, total_equity=10000.0, realized_pnl=0.0, unrealized_pnl=0.0)
+    approved, _ = risk_mgr.validate_trade(signal, trade_amount=500.0, portfolio=portfolio)
+    assert approved
+
+    # Execute via AlpacaAdapter
+    adapter = AlpacaAdapter(api_key="KEY", secret_key="SECRET")
+    order = adapter.submit_order(symbol=signal.ticker, qty=3.0, side="buy")
+    assert order["id"] == "ORD_TEST_99"
+
 
