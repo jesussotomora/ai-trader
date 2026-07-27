@@ -7,6 +7,7 @@ from src.engine.council import AdvisoryCouncil
 from src.engine.backtest import BacktestEngine
 from src.brokers.alpaca_adapter import AlpacaAdapter
 from src.data.market_data import MarketDataService
+from src.compliance.cli_assistant import CLIAssistant
 
 
 def test_full_pipeline_flow(tmp_path):
@@ -122,6 +123,13 @@ def test_market_data_integration():
     
     assert indicators["current_price"] > 0
     assert 0 <= indicators["rsi_14"] <= 100
+
+
+def test_cli_assistant_integration():
+    assistant = CLIAssistant()
+    prompt = assistant.prepare_prompt_package("MSFT", mock_text="Microsoft cloud revenue grows 25%")
+    assert "MSFT" in prompt
+    assert "Microsoft cloud revenue grows 25%" in prompt
 
 
 
