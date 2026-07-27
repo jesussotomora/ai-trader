@@ -6,6 +6,7 @@ from src.risk.risk_manager import RiskManager
 from src.engine.council import AdvisoryCouncil
 from src.engine.backtest import BacktestEngine
 from src.brokers.alpaca_adapter import AlpacaAdapter
+from src.data.market_data import MarketDataService
 
 
 def test_full_pipeline_flow(tmp_path):
@@ -112,5 +113,15 @@ def test_alpaca_adapter_integration(mock_post):
     adapter = AlpacaAdapter(api_key="KEY", secret_key="SECRET")
     order = adapter.submit_order(symbol=signal.ticker, qty=3.0, side="buy")
     assert order["id"] == "ORD_TEST_99"
+
+
+def test_market_data_integration():
+    data_svc = MarketDataService()
+    bars = data_svc.get_synthetic_bars("NVDA", count=20, base_price=120.0)
+    indicators = data_svc.calculate_indicators(bars)
+    
+    assert indicators["current_price"] > 0
+    assert 0 <= indicators["rsi_14"] <= 100
+
 
 
