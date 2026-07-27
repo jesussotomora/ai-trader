@@ -28,3 +28,30 @@ class AlpacaAdapter:
         response = requests.get(url, headers=self.headers)
         response.raise_for_status()
         return response.json()
+
+    def submit_order(
+        self,
+        symbol: str,
+        qty: float,
+        side: str = "buy",
+        order_type: str = "market",
+        time_in_force: str = "gtc"
+    ) -> Dict:
+        url = f"{self.base_url}/orders"
+        payload = {
+            "symbol": symbol.upper(),
+            "qty": str(qty),
+            "side": side.lower(),
+            "type": order_type.lower(),
+            "time_in_force": time_in_force.lower()
+        }
+        response = requests.post(url, json=payload, headers=self.headers)
+        response.raise_for_status()
+        return response.json()
+
+    def cancel_all_orders(self) -> bool:
+        url = f"{self.base_url}/orders"
+        response = requests.delete(url, headers=self.headers)
+        response.raise_for_status()
+        return True
+
