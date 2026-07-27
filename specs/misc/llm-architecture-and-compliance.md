@@ -1,6 +1,6 @@
 # Architectural Specs: Compliant LLM Integration, Model Selection & Dual Operating Modes
 
-**Document Purpose:** Define ToS-compliant usage of web subscriptions, specify supported LLMs, detail the dual execution modes (Arena Competition vs. Advisory Council), and refine sentiment/semantic strategy logic.
+**Document Purpose:** Define ToS-compliant usage of web subscriptions, specify supported LLMs (including Kimi K3 & OpenCode Go), detail the dual execution modes (Arena Competition vs. Advisory Council), and refine sentiment/semantic strategy logic.
 
 ---
 
@@ -14,13 +14,13 @@ To utilize user subscriptions legally and safely without risking account suspens
 
 1. **Pattern A: Interactive Prompt & Response Helper (Human-in-the-Loop / Assistant UI):**
    * `ai-trader` prepares standardized, optimized context packages (News + Financial Metrics + System Persona) and presents a 1-click "Copy Prompt / Export File" interface for the user's browser subscription.
-   * The user pastes or uploads into ChatGPT Plus / Claude Pro / Gemini Advanced and pastes back the structured JSON response (or uses a lightweight browser extension helper where permitted).
-2. **Pattern B: Official Subscription CLI / Extensions / Official API Integrations:**
+   * The user pastes or uploads into ChatGPT Plus / Claude Pro / Gemini Advanced and pastes back the structured JSON response.
+2. **Pattern B: Official Subscription CLI / Gateway Tools (Claude Code & OpenCode Go):**
    * Support official developer CLI tools included in subscriptions (e.g. **Claude Code** included in Claude Pro/Team).
-   * Support official API key options when available, with per-token cost estimation and budget caps for users who opt into pay-as-you-go.
+   * Support **OpenCode / OpenCode Go ($10/mo gateway key)** for terminal agent execution accessing **Kimi K3, DeepSeek V4, Qwen 3.7 Max, and Grok**.
 3. **Pattern C: Hybrid Engine:**
    * Heavy bulk tasks (market data processing, indicators) run locally on Python.
-   * Strategic reasoning tasks (sentiment analysis, thesis evaluation, council debates) use the subscription-aligned interface.
+   * Strategic reasoning tasks (sentiment analysis, thesis evaluation, council debates) use the subscription-aligned interface or OpenCode Go CLI.
 
 ---
 
@@ -31,9 +31,11 @@ We will support the following flagship models across platforms:
 | Model Family | Primary Strength in `ai-trader` | Subscription Tier |
 | :--- | :--- | :--- |
 | **Claude 3.5 / 3.7 Sonnet & Opus** | Code architecture, deep financial report analysis, structured JSON outputs | Claude Pro ($20/mo) |
+| **Kimi K3 (Moonshot AI)** | 1M token context, Agent Swarm, Kimi Code, complex codebase search | Kimi Moderato ($19/mo) or OpenCode Go ($10/mo) |
+| **OpenCode Go Suite (Kimi K3, DeepSeek V4, Qwen 3.7, Grok)** | Open CLI Gateway for multi-model terminal agent execution | OpenCode Go ($10/mo) |
 | **GPT-4o / o1 / o3-mini** | Complex quantitative math, backtesting validation, macro economic logic | ChatGPT Plus ($20/mo) |
-| **DeepSeek R1 / V3** | Multi-step mathematical reasoning, cost-free logic verification | DeepSeek Web (Free) |
-| **Qwen 2.5 / 3 Max** | Algorithmic code review, quantitative analysis | Qwen Chat (Free) |
+| **DeepSeek R1 / V3 / V4** | Multi-step mathematical reasoning, cost-free logic verification | DeepSeek Web (Free) or OpenCode Go |
+| **Qwen 2.5 / 3 / 3.7 Max** | Algorithmic code review, quantitative analysis | Qwen Chat (Free) or OpenCode Go |
 | **Perplexity Pro (Sonar/GPT/Claude)** | Real-time web news aggregation, sentiment validation | Perplexity Pro ($20/mo) |
 | **Gemini 1.5 / 3.0 Pro** | Massive 2M context analysis (entire SEC 10-K filings + earnings calls) | Gemini AI Pro ($19.99/mo) |
 
@@ -58,7 +60,7 @@ We will support the following flagship models across platforms:
      ┌─────────────────┼─────────────────┐           ┌─────────────────┼─────────────────┐
      ▼                 ▼                 ▼           ▼                 ▼                 ▼
  ┌───────┐         ┌───────┐         ┌───────┐   ┌───────┐         ┌───────┐         ┌───────┐
- │Claude │         │ GPT-4 │         │DeepS. │   │ Tech. │         │ Fund. │         │ Senti.│
+ │Claude │         │Kimi K3│         │DeepS. │   │ Tech. │         │ Fund. │         │ Senti.│
  │ Bot   │         │ Bot   │         │ Bot   │   │Analyst│         │Analyst│         │Analyst│
  └───┬───┘         └───┬───┘         └───┬───┘   └───┬───┘         └───┬───┘         └───┬───┘
      │                 │                 │           └─────────────────┼─────────────────┘
@@ -73,7 +75,7 @@ We will support the following flagship models across platforms:
 ### Mode A: Multi-LLM Arena (Competition Mode)
 * **Concept:** Inspired by Video #2 (5 AIs with $1K real money).
 * **Execution:**
-  * Each LLM manages an isolated virtual portfolio (e.g. $1,000 USD virtual capital).
+  * Each LLM (Claude, Kimi K3, GPT-4, DeepSeek, Qwen, Grok) manages an isolated virtual portfolio (e.g. $1,000 USD virtual capital).
   * Models compete on Sharpe Ratio, Win Rate, and Total Return over daily/weekly cycles.
   * Leaderboard tracks performance live, allowing users to discover which model excels in current market regimes.
 
@@ -81,7 +83,7 @@ We will support the following flagship models across platforms:
 * **Concept:** Collaborative multi-agent decision making.
 * **Specialist Roles:**
   1. **Technical Analyst (e.g. Qwen / GPT):** Analyzes Price Action, Moving Averages, RSI, MACD, Volume.
-  2. **Fundamental Analyst (e.g. Gemini / Claude):** Analyzes P/E ratios, earnings growth, SEC filing risks.
+  2. **Fundamental Analyst (e.g. Gemini / Kimi K3 / Claude):** Analyzes P/E ratios, earnings growth, SEC filing risks.
   3. **Sentiment & Macro Analyst (e.g. Perplexity / DeepSeek):** Scrapes live news, social sentiment, macro interest rate trends.
   4. **Risk Manager Guardrail:** Enforces stop-loss limits, position sizing, and drawdown protection.
 * **Consensus Synthesizer (Chairman LLM):** Weighs all advisor scores into a single final confidence score (0 to 100) and outputs a single executable trade order.
