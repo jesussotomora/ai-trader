@@ -1,0 +1,780 @@
+[00:00] Claude's more than doubled my money already. So, 
+pretty sweet. I decided to give five different  
+[00:05] models real money. Claude, Chachi BT, Gemini, 
+Grock, and Perplexity. Okay, let me just see  
+[00:12] how smart they actually are. I told them it's a 
+competition against the other four and they have  
+[00:17] to win or I'm going to cancel my paid subscription 
+with them. If they lose, I'm canceling. And I  
+[00:22] said, there's only going to be one winner. You've 
+like 30xed on Claude. Claude's killing it. So,  
+[00:27] everybody just needs to try to catch up to Cloud 
+on here. My gosh. Yeah, it's been interesting  
+[00:31] especially to watch Gemini as it started losing 
+my money and then basically became a gambler.
+[00:42] So the reason you flew here to Texas 
+today is to tell us how you used AI  
+[00:46] to make you money passively. Correct. Correct. So 
+tell us what your what your thinking was when you  
+[00:52] started this experiment. Yeah. So, I started like 
+6 months ago or or maybe a little less uh using  
+[00:58] the different AI models to manage my money. You 
+know, everybody started talking about how smart  
+[01:04] Claude was and obviously ChatBT and all the 
+others. So, I figured, okay, well, let me just  
+[01:10] see how smart they actually are. So, I decided to 
+give five different models $1,000 of real money.  
+[01:16] and which I know is not nothing, but I wanted it 
+to be basically enough to where I didn't want to  
+[01:22] do it like 50 bucks cuz then I was thinking, well, 
+maybe I would just neglect it or whatever. So, I  
+[01:27] gave them each $1,000 of real money. And the ones 
+I gave was was Claude, Chachi BT, Gemini, Grock,  
+[01:34] and Perplexity. Okay. 1,000 each. 1,000 each. So, 
+5,000 bucks I put in. And I think the amount of  
+[01:39] money is important because there needed to be 
+stakes. Yeah. If it's 20 bucks, 50 bucks, then  
+[01:44] you're not going to take it seriously. Yeah. So 
+5,000 bucks and I know that Perplexity in case the  
+[01:50] commenters and and viewers want to know this. So 
+Perplexity basically uses the other models to make  
+[01:55] its decisions as it sees fit. So it's the model to 
+end all models. Yeah. But that doesn't necessarily  
+[02:01] make it better. Yeah. Not necessarily. So I 
+thought those would be the best vibe to choose.  
+[02:06] Grock I definitely wanted to include because of 
+its connection to X and the Twitter fire hose of  
+[02:13] information. So, you're thinking like maybe more 
+social mentions will equate to a better return  
+[02:19] buying a certain stock? Yeah, that's what I had 
+assumed. Basically, uh Gemini obviously is owned  
+[02:24] by Google, so they've got all that connection 
+there with Google searches and whatever else.  
+[02:28] And then Chachi BT and Clott are similar in how 
+they're made and built and stuff. So, yeah. So,  
+[02:33] I gave them each $1,000 and yeah, this is in 
+late 2025 is when it started. And what I did was  
+[02:41] I told them, so I told them that they can be as 
+risky as possible and it's okay if I lose all my  
+[02:47] money and I had to actually work that prompt 
+in pretty hard because at the start they kept  
+[02:53] only giving me theoretical recommendations. It's 
+worried about liability. It's trying to hedge.  
+[02:58] It doesn't want to be responsible for you losing 
+money. Yeah. So that was my first obstacle is  
+[03:02] basically getting them all to agree to give me 
+re I said I want I'm going to give you real money  
+[03:09] and I want real recommendations. Grock they 
+were fine with it right away which is just  
+[03:14] kind of funny cuz that's like the the most 
+liberal the most loose like Yeah. Yeah. Yeah.  
+[03:19] Yeah. So uh whereas like Chachi BT and Claude 
+were very apprehensive to to basically allow that  
+[03:25] I guess you could say. Now, before you continue, 
+let me ask you like why was that important to you  
+[03:29] to to prompt it like you can lose my money? What 
+why I just, you know, and if if you like sign up  
+[03:35] for Robin Hood or whatever and then they'll ask 
+you, you know, they'll ask you like questions  
+[03:40] when you first sign up and it's like, you know, 
+do you have experience in the stock market? What  
+[03:43] is your time horizon with your investments? Do 
+you need the money right now? So I think just  
+[03:49] by nature these investing platforms also like they 
+want to cover their tracks in regards to liability  
+[03:56] and so I just wanted to like get through that 
+with the AI models too and okay I don't know if  
+[04:01] if they're talking in theoreticals they might 
+say oh theoretically you could buy the options  
+[04:07] and this or whatever but no I wanted real stuff 
+because I was giving them and I did my real money  
+[04:12] so I just wanted the truest data possible. Now, 
+when you say giving them you real money, is that  
+[04:17] literal? Are you like or are you just making 
+trades based on their suggestions? Yeah. So,  
+[04:22] here's what I did. So, I loaded it up into Schwab, 
+Charles Schwab, the brokerage account that I use,  
+[04:29] and then I named each portfolio. So, Claude has 
+its portfolio chat Gemini Grock Perplexity. Gave  
+[04:35] them each a,000 bucks. And then in the prompt, 
+so so after I got them to agree to give me real  
+[04:41] advice, what I then and and I have at least a $20 
+a month subscription, which with each of the five  
+[04:50] since I use all five for work anyway, that wasn't 
+like an additional expense. Yeah. Or whatever.  
+[04:55] So I have a paid subscription with each. And so 
+so then what I did is I told them they have to  
+[05:00] win. It's a competition against the other four 
+and they have to win or I'm going to cancel my  
+[05:06] paid subscription with them. If they lose, I'm 
+cancelling. And I said there's only going to  
+[05:10] be one winner. What made you think to do that? I 
+was just trying to see if robots powers that be  
+[05:17] would act in their best interests to keep my $20 
+subscription a month to them. Cuz I have to think  
+[05:24] that these companies are like engineering 
+these tools. You would have to think to get  
+[05:28] That's why they're all Yesmen, right? That's 
+a great idea, Chris. You want to jump off the  
+[05:32] roof without a parachute. That's a, you know, like 
+Yeah. Yeah. So, I can't be the first person that  
+[05:38] said, I mean, maybe I was one of the first 
+that did this with investing, but I can't be  
+[05:42] the first person that's like, if you don't 
+tell me how to whatever grow my business,  
+[05:47] I'm going to cancel you, right? So, I'm sure to 
+your point, yeah, they're trying to engineer it  
+[05:51] for retention. They want to make more money. Hey, 
+if you're liking this video, please hit subscribe.  
+[05:55] You probably think you're subscribed cuz YouTube 
+shows you my videos, but you haven't done it yet.  
+[05:59] I just know it. So, please check. Thank you. So, 
+yeah. And then I thought it would just raise the  
+[06:03] stakes a little bit. Um, and I wanted to see if 
+their decisions were different knowing something  
+[06:10] real was on the line. 20 bucks. Yeah. A month 
+from one of their users. Now, did you plan to  
+[06:15] touch base with them on how the other 
+models were were doing? Yeah. So, once  
+[06:20] I built that into everything, and I always say 
+like remember this for future chats type of thing.  
+[06:25] So then I asked, "Okay, what do you want my 
+first trade to be with your $1,000?" And then  
+[06:30] it would tell me and then I made the trades. 
+So I did that with all five. So that I did that  
+[06:35] like on a Monday. And then every Saturday what 
+I do is I screenshot all five of their holdings  
+[06:45] and then I load all the screenshots into each 
+model. So like Perplexity knows project. Yeah.  
+[06:51] Yeah. Perplexity knows what the Grock portfolio 
+is at. Claude chat and it knows their holdings  
+[06:57] and then it knows its own holdings and then I 
+say based off of this and based off the fact  
+[07:02] that you have to win or I'll cancel you. Do you 
+want me to make any new trades on Monday or not?  
+[07:06] That's what I say. So it's a weekly decision. 
+Yeah. You give it an opportunity to make buys  
+[07:12] or sells on a weekly basis based on what maybe 
+based on what the other models are doing. Yeah.  
+[07:18] Yeah. And sometimes they say no, we're going 
+to hold. Sometimes they say, "Yeah, sell this,  
+[07:21] buy this." Other times they say, and sometimes 
+they they leave a little in cash, so they're like,  
+[07:26] "Yeah, let's use some of that cash to buy more 
+of this or whatever." So, yeah, they're they're  
+[07:30] acting very much like real investment advisors 
+now. Now, are you seeing one or more of the models  
+[07:36] being more of a copycat than the other? Like, 
+oh, Cloud's winning and it just bought Nvidia.  
+[07:40] I want to buy Nvidia. It might not be telling you 
+that, but are you witnessing that from any of the  
+[07:44] models that I I think I started to. So, one thing 
+that I started to do is I mix it up when I I don't  
+[07:51] always show the other models what the other models 
+holdings are. I show them what the totals are,  
+[07:58] but not always the holdings because I don't want 
+them to be influenced by the holdings per se.  
+[08:04] Okay. And it changes often enough. They wouldn't 
+know unless I updated them what the holdings are.  
+[08:10] Yeah. Yeah. So, devil's advocate here. If for 
+instance, Grock sees that Claude is crushing it,  
+[08:18] but it doesn't know what the holdings are. It just 
+sees the percentage, what different decision can  
+[08:22] it make based on that info if it wanted to? If 
+it does know or if it doesn't If it does know,  
+[08:28] if it knows that it's losing to Claude and you're 
+only a third of the way through this competition.  
+[08:32] Yeah. What could it realistically do differently 
+if it doesn't know what Claude's buying? Well,  
+[08:36] if it doesn't, well, it'll just act more risky. 
+I'll show you the holdings. These guys are pretty  
+[08:41] risky. these AI models because I said you have to 
+win. I said you can be as risky as you want and um  
+[08:47] it's okay if I lose my money so don't worry about 
+it just win the competition. So what it could be  
+[08:51] doing is let's just say that over the first 
+month Grock was up 5% and Claude was up  
+[08:57] 35%. Yeah. Grock could be assuming all right 
+let me look at these stocks like what stock  
+[09:02] like in the S&P really popped Google popped 
+by 40%. Maybe he's 60% weighted in Google.  
+[09:10] I'm going to go heavy on Google or I'm going 
+to buy options. Like it could be making assumpt
+[09:17] like Claude owned Intel and Grock didn't and then 
+if Grock's like, "Oh, Claude's beating me. I need  
+[09:23] to own Intel." Well, it's still playing catch-up. 
+Now it's own owning the same thing, but starting  
+[09:28] from behind. So, I think sometimes they copied 
+and then realized, "Oh, that's not going to work  
+[09:34] cuz I actually won't catch up." Yeah. Cuz I'm 
+already losing and I just bought the same thing.  
+[09:39] By definition, I will not be able to catch up 
+if I'm losing eye on the same thing. Yeah. So,  
+[09:43] when I go through some of the holdings, you'll see 
+that there is some overlap still. I do think part  
+[09:47] of that though, or even all of that is not because 
+they're playing copycat. It's because it has been  
+[09:54] the smartest but one of the most riskiest plays. 
+Oh, okay. Yeah. Oh, there's a little teaser.  
+[09:59] Yeah. I'm curious to see if you were to play out 
+this test like an AB test. Same amount of money,  
+[10:04] same five models, same general prompting, but the 
+only thing you change is show the holdings every  
+[10:09] week, the specific holdings. Yeah, I'm curious how 
+your performance would differ on the test. Yeah,  
+[10:15] I don't know. I mean, I would have had to start 
+that from the start, but basically now I show  
+[10:20] So, every week I show them the totals of the 
+others and I remind them of their holdings  
+[10:25] and I say, "What do you want me to change?" And 
+then once a month I show them the holdings of  
+[10:29] all the others as well. M. So that's how often 
+they get to know what the others are holding.  
+[10:36] Only once a month. Yeah. Okay. Okay. Yeah. Yeah. 
+Cuz I'm wondering like if it knew that Claude was  
+[10:41] buying Google, Nvidia, Amazon. Yeah. And it 
+saw the returns from each and when it bought  
+[10:45] them when it sold them. Yeah. And it's losing to 
+Claude, it might say, "All right, I'm going to buy  
+[10:51] instead of just buying Google, I'm going to buy 
+options for Google." Right. like I'm going to  
+[10:55] I'm going to do X, Y, or Z tweaks to what Claude's 
+doing because I think that W. So, I'd be curious  
+[11:00] to see how that would perform. Yeah. Someone 
+someone watching this should try that. Yeah. Well,  
+[11:05] yeah. If you want, I can show you some of what 
+they've bought and what they're at, the portfolio  
+[11:09] values of each. Yes. Uh cuz Claude's more than 
+doubled my money already. So, pretty sweet.  
+[11:15] This started six months ago. So, are you using the 
+same Claude model the whole time or No, I always  
+[11:20] use the whatever the newest models are. Okay. So, 
+as 4.6 comes out, you switch 4.7. Yep. Okay. Yeah.  
+[11:26] Have you noticed a correlation on return profile 
+to like which Opus model or which Croc model?  
+[11:33] Yeah. Honestly, no. I haven't analyzed it that 
+deeply because already in like the six months,  
+[11:38] I guess I'm probably on model three from Claude, 
+like the third new one, right? And the third new  
+[11:43] one from chat and maybe the second one from Gemini 
+Grock. I don't keep track of updates as closely,  
+[11:49] but yeah. So, I don't know. Per model return. 
+That would be an interesting one, too.  
+[11:54] But I just kind of assume, okay, the newest 
+one's got to be the smartest every time. So,  
+[11:58] that's what I roll with. Well, and the market's 
+been the market overall has been pretty flat for 6  
+[12:02] months, hasn't it? Yeah. Which is why this will be 
+interesting to show you how they more than doubled  
+[12:06] my money, some of them. Yeah. Or at least one. 
+But the others have done really good, too. So,  
+[12:12] yeah. And it's interesting to see how their 
+holdings evolve over time. And it's interesting  
+[12:16] to see, especially the one that has been losing me 
+money, how it's been trying to catch up uh and be  
+[12:23] even more risky to try to catch up. It's like the 
+it's the sunk cost fallacy. The guy walks into the  
+[12:28] casino. Yeah. He loses 300 bucks. He's like, I got 
+to earn it back. I got to earn it back. Next thing  
+[12:32] he knows, he's out 3,000 bucks. It's doing that. 
+Yeah. I mean, yeah. I mean, luckily, I can't lose  
+[12:38] more than $1,000 of from any given model, but I'm 
+getting close. So, one has more than doubled it.  
+[12:46] Um, and one has lost and the other three have made 
+money, but I'm getting close to doubling the the  
+[12:51] original 5K overall. Wow. Yeah, man. And I've been 
+such a Claude Homer for a few months now. Like,  
+[12:58] I wonder what it would look like if you had 
+just put it all in Claude. I mean, of course,  
+[13:01] you know what it would look like. Yeah. You could 
+run the numbers. Yeah. But then it wouldn't be as  
+[13:04] interesting. You wouldn't learn as much. Yeah. 
+Yeah. And I was telling a friend about this the  
+[13:07] other day, and he's like, "Ah, why didn't you put 
+50 grand in?" I'm like, "Okay, dude. What? What?  
+[13:11] Not everyone has 50 grand lying around. Yeah. But 
+yeah, sure. In hindsight, I wish I would put more  
+[13:16] in. Why didn't you buy Bitcoin in 2009? Yeah. 
+Yeah. Exactly. What were you doing? Yeah. So, but  
+[13:21] no, it's interesting and and it'll be interesting 
+um to see how this evolves over time. I see I've  
+[13:26] seen someone on X that is doing a similar thing 
+but just with crypto but they're having the models  
+[13:33] run it. another one another person on X I saw 
+them doing it but in Poly market the like gambling  
+[13:40] basically platform which we don't endorse. Yeah. 
+So anyway so people are trying it in different  
+[13:45] ways and um but no I thought it was interesting to 
+just do it in the stock market. So although Schwab  
+[13:50] has the ability to buy cryptoreated things too. 
+Okay. Now are you only buying and selling stocks  
+[13:57] or are you doing options trading? Yeah. So I said 
+options is on the table and I said whatever crypto  
+[14:03] things are on Schwab is also on the table. Okay. 
+But I think that's only like Bitcoin, Ethereum and  
+[14:09] Salana are the three big ones. And has it given 
+you any crypto trades to to make? Yeah. What  
+[14:15] crypto trades has it given you to to make then? 
+Yeah. So uh Gemini had me buy a 2x Salana ETF. So  
+[14:25] Salana is a cryptocurrency and there's a thing 
+that whatever Salana does, this thing does two  
+[14:32] times that. So indirect exposure to Salana. You're 
+not buying the coin itself, but you're buying the  
+[14:38] price movements. Yeah. Times two. Yeah. And Salana 
+went down one way or the other. Yeah. Yeah. So  
+[14:43] Salana went down. So this thing went down double. 
+Yeah. Yeah. And uh Yeah. That's how Gemini uh lost  
+[14:50] more than half of my money that I Oh my gosh. 
+Yeah. What percentage of your money did it tell  
+[14:54] you to put in there? It was pretty high. So, 
+I don't own that thing anymore in in Gemini  
+[15:01] because uh it sold it. Uh it realized how bad it 
+was. So, it bought like $500 of that Salana 2X  
+[15:09] stock. Okay. And it sold it at 162 bucks. Oh, 
+brutal. Yeah. Yeah. So, that was a big loss on  
+[15:17] that one. Okay. And now all of its money, well, it 
+has some in cash in Gemini and it has the rest in  
+[15:25] an ETF, which for those of you who don't know, 
+an ETF is like a mutual fund. It's just like  
+[15:29] a group of stocks. It has it in the ETF with 
+the ticker symbol of BOTZ, which is a global  
+[15:37] robotics related ETF. I had never even heard of it 
+before it told me to buy that. That's what it is.  
+[15:45] um it hasn't owned it for that long that it's 
+up six bucks in that but that's what Gemini  
+[15:51] has right now. Okay. But it's in last. I think 
+that is a worthy bet to try to catch up with.  
+[15:57] Yeah. You know, AI robotics. Like there's 
+a lot of hype around that. So yeah,  
+[16:01] I want you to do something right now. Open your 
+bank statement and add up every single software  
+[16:05] subscription that you're paying for. your CRM, 
+your email marketing tool, text message platform,  
+[16:10] calendar booking app, funnel builder, review 
+management, even a separate form builder or  
+[16:14] automation tool. I've talked to business owners 
+paying $500 to $3,000 a month across eight or 10  
+[16:20] different tools and half of them don't even talk 
+to each other. So then they go pay for Zapier on  
+[16:25] top of that just to make things connect. Highle 
+replaces all of it. CRM, email, SMS, funnels,  
+[16:31] websites, calendars, automations, reputation 
+management, invoicing, one login, one dashboard,  
+[16:36] one bill starting at 97 bucks a month. A guy in my 
+community was paying 3.47 just for ClickFunnels,  
+[16:42] 99 for Mailchimp, 25 for Calendarly, 79 for a 
+review tool, and 49 bucks for Zapier just to glue  
+[16:48] it all together. That's 600 a month if you're not 
+counting. He moved everything to high level and  
+[16:52] cut his software cost by over 80%. But the best 
+part isn't even the savings. It's that everything  
+[16:57] just works together natively. A lead fills out a 
+form on your funnel that creates a contact in your  
+[17:02] CRM, which triggers a text and email sequence, 
+books an appointment on your calendar, and then  
+[17:07] ask for review when the job's done. One workflow, 
+zero duct tape, and then you can white label the  
+[17:11] whole platform to resell it to other businesses 
+as your own software. Charge them 2 to 500 bucks a  
+[17:17] month. Check out gohighle.com/tkopod. They'll give 
+you a 30-day free trial to see what I mean. Did it  
+[17:22] give you justification for buying Salana? Yeah, it 
+always does. Okay. Yeah, they always like provide  
+[17:28] me with the recommendations. Do you know what the 
+thesis was? It was just like Well, it it bought it  
+[17:33] when crypto was still kind of going up. So, like 
+catching momentum. Yeah, cuz this maybe was like  
+[17:37] October or November of last year or something. 
+And then I mean honestly, it just bought it at  
+[17:42] like perfectly the wrong time. So, yeah, that's 
+what I do. Yeah. Yeah. As good as me. Yeah. Yeah.  
+[17:48] So, yeah, that's what uh that's what Gemini has 
+done. Okay. Grock, what Grock owns right now,  
+[17:54] which has been a most of what the gains have 
+come from is from this, is a a technology ETF  
+[18:01] that does 3x what normal technology companies do. 
+So, this one's a suite of technology companies.  
+[18:08] What do you mean 3x? It's a ETF that does 
+three times whatever the stocks in it do. Oh,  
+[18:14] okay. Yeah. Okay. So, it's like triple leverage. 
+Yeah. Yep. Triple leverage. One way or the other.  
+[18:19] Yeah. Yeah. But Yeah. So like this one would 
+like own like Microsoft and Amazon inside of it,  
+[18:25] but this thing does triple the leverage of of 
+whatever those do. So that's what Grock has.  
+[18:30] It's comparable to buying an option then, 
+right? Like you can multiply your returns  
+[18:35] with the same amount invested. Yeah. Perplexity 
+and chat GPT are basically at the same right now.  
+[18:42] Same amount. Perplexity initially had lost money 
+for me. I don't remember what it was on. And then  
+[18:47] it bought SO XL, which is another triple leverage 
+thing on semiconductors, semiconductor stocks,  
+[18:55] which are hot because of AI right now. So 
+that's what Perplexity has all of its money in.  
+[19:01] And that's what ChachiBT has most of its money in. 
+Same thing. So both independently invested in that  
+[19:07] without knowing the other was or they I'll get to 
+that. I don't think so. Okay. Yeah. So yeah. So  
+[19:13] chat GBT portfolio has that too. And then it also 
+has TQQQ which does triple what the NASDAQ does.  
+[19:22] Okay. So as you can see viewers, listeners, 
+Chris, they're being pretty risky. A lot of  
+[19:27] triples. This is not financial. Yeah. Definitely 
+not financial advice. Well, it is from them.  
+[19:32] Not from me though. Yeah. Yeah. So triple 
+whatever the NASDAQ does it it does that.  
+[19:37] But uh almost all of ChachiBT's portfolio gains 
+has come from that semiconductor triple leverage  
+[19:44] SO XL. And then the current leader is Claude who 
+was the first to buy SO XL the semiconductor one.  
+[19:53] So Claude bought it first and then Chat and 
+Perplexity saw it and I think they copied.  
+[20:00] Now you said you show them holdings once a month, 
+right? Yeah. But earlier I showed them more often  
+[20:05] and then I and then I think that they started 
+copying so I wanted to get away from that.  
+[20:10] So now so it saw Claude's pick was doing well. 
+Yeah. So what I'm interested to see is when  
+[20:16] Claude's going to tell me to sell this so XL 
+whenever that may be. I'm not going to tell  
+[20:22] Chat and Perplexity. Yeah. I'm never going to tell 
+them. I don't want them to know that Claude sold.  
+[20:29] So whenever that happens I'm not going to tell 
+them. And then Claude bought a couple others and  
+[20:33] then Claude bought Intel as well at a good time. 
+So which is like a similar bet to semiconductors,  
+[20:37] isn't it? And Claude bought it. So like the US 
+and Trump and stuff, it was a unique deal. Anyway,  
+[20:45] they own like part of Intel now. And that happened 
+last year. And when Claude told me to buy this,  
+[20:52] that was the thesis. It was like if if the Trump 
+administration and the country are investing  
+[20:59] in Intel, it was basically like, yeah, they're 
+going to pass like regulatory stuff or whatever  
+[21:05] that's going to be related to AI and data centers 
+and whatever. It's going to be good for Intel.  
+[21:10] That's what that was the thesis it gave me to 
+buy it. Wouldn't it think it was that was already  
+[21:13] priced in? You know, you would have thought, 
+but it is up 285% on what it put in on the Intel  
+[21:20] buy. Holy cow. So, it put in it put in like 120 
+bucks in Intel and now that 120 is at 550. Now,  
+[21:29] is SO XL does that hold Intel as well? 
+So, you double dipping. It probably does.  
+[21:34] It probably does. Yeah. Yeah. I don't know all 
+of SO's holdings, but Yeah. How long after that  
+[21:41] Trump announcement did it tell you to buy? It was 
+one of its first buys, so it was probably pretty  
+[21:46] soon after. Yeah. Okay. Yeah. How many holdings 
+per model do you average at any given time?  
+[21:54] Claude has four. Uh the rest have like two or one. 
+Okay. Yeah. And they were being more diversified  
+[22:02] at the start, but uh yeah, pretty much all of them 
+now have two. I'm looking right now. They all have  
+[22:07] two or one. And yeah, at the start they were also 
+messing around with options and some worked, some  
+[22:14] didn't. And then they've all kind of settled into 
+these leveraged ETF type of plays. Okay. Um Yeah.  
+[22:22] Did you give them an end end date to this? I said 
+I was going to do it for one year. Okay. Yeah. Are  
+[22:27] you still buying your own stuff as well alongside 
+this? Yeah. Yeah. I have my own portfolio that I  
+[22:32] that I run and invest in and um it's interesting 
+because now what I have to do is I try to keep the  
+[22:39] AI's recommendations. I almost like try to force 
+that out of my head. Yeah. When I'm making my own  
+[22:44] decisions. But yeah, it's hard cuz it's like, oh, 
+well, they said that for theirs and it's actually  
+[22:48] going really well. So, I have bought some of 
+their stuff in my like SO XL. Uhhuh. Yeah.  
+[22:53] Yeah. And Intel. And Intel. Yeah. I want to go buy 
+Intel. Yeah. Yeah. I'm terrible at investing in  
+[22:58] stuff. Terrible. Yeah. So, yeah. No, it definitely 
+And it's interesting like sometimes when they say  
+[23:05] something and they say their reason because I 
+always say like give me your reasoning. if it's  
+[23:09] something that I own or that I've been thinking 
+about buying, then it kind of gives me, you know,  
+[23:13] it makes me think more deeply or or differently 
+about that. Um, or if it was something that I  
+[23:18] wasn't thinking about, then, you know, gives me 
+a new idea. And then when they sell something,  
+[23:22] which I think, you know, again, not financial 
+advice, but I think probably the hardest part with  
+[23:27] investing is actually knowing when to sell. Yeah. 
+I think it's a little easier to like you can zoom  
+[23:33] out and know when to buy. like, oh, you should 
+buy something that has good long-term potential  
+[23:38] after it's gone down or or before it goes up, if 
+you know, right? But selling at a high at the peak  
+[23:46] to me, like psychologically, that's the hardest 
+part of investing because that's when you're  
+[23:49] the most excited. Yeah. And and you've made the 
+most money you have from that little investment  
+[23:55] is at that time. So, it's definitely not 
+human of you to be like, you know what,  
+[24:00] I'm so happy I'm going to walk away. Right? That 
+just is so rare. Which is why I don't know you you  
+[24:07] just don't hear about stories very often of 
+people doing absolutely amazing consistently  
+[24:12] because of that. What you do hear I'm sure what 
+people hear is their random friends saying oh I  
+[24:17] made money on GameStop you know back in the like 
+co times. I made money there. Like you usually  
+[24:21] hear about people's random wins but you don't hear 
+about all their losses. You're not going to say oh  
+[24:26] I bought this and it did this and here and then 
+I sold. Well, and as husbands, we always tell  
+[24:30] our wives about the wins and the losses. Yeah. 
+Exactly. But I've I've made that pretty easy  
+[24:36] for me. Like my framework is I don't sell. Yeah. 
+Period. Like if I had to sell to pay the mortgage,  
+[24:42] of course I would. But if I buy a stock like 
+I just bought Eli Liy, I I buy Robin Hood,  
+[24:47] I buy Tesla, Coinbase. Yeah. I will never sell 
+them. The company will go out of business and I'll  
+[24:52] lose all my money or it will return Yeah. a lot. 
+And if you are generally making the right buys,  
+[24:57] which you know those ones seem good, like it's a 
+good thesis, those that'll work out. You just got  
+[25:03] to stay in the game, which is the other hard part 
+is like being willing to just stay consistent.  
+[25:08] Yeah. Yeah. But anyway, what I'm hoping this does 
+for me personally is when they sell something,  
+[25:16] I'm hoping that'll help me do a better job at 
+selling things that I think like the SOL that's  
+[25:21] gone up a ton or Intel. If Claude or whoever 
+else says, "Hey, I'm I'm sell let's sell. Let's  
+[25:26] move on to the next thing." Then maybe I'll 
+sell some and mine my personal one. Yeah. Um  
+[25:32] to just try to like build that more systematic 
+approach into my strategy, I guess you could say.  
+[25:38] What has this taught you about investing? Not 
+about specific stocks, but investing in general.  
+[25:44] It's been interesting, especially to watch Gemini 
+as it started losing my money and then basically  
+[25:53] became a gambler and how not good. And in its 
+defense, you told it it could be a gambler. Yeah.  
+[25:59] Yeah. But like I think that's very humanistic as 
+well is like, "Oh man, I lost it." Whether you're  
+[26:04] in a casino, which is obviously the worst version 
+of this, or the stock market, like, "Oh man, I  
+[26:10] I I bought something, it went up, and and then 
+it went down. I got to make it back." Like,  
+[26:14] "How do I make it back?" Or or how do I make more? 
+That's just not a good I mean, that's not how you  
+[26:19] build wealth long term. Yeah. And especially 
+starting out, that's something that I think a lot  
+[26:24] of people face. You know, the best antithesis of 
+this would be like Warren Buffett. It's just like  
+[26:29] steady like you just he just almost never sells 
+and he just buys good quality companies and just  
+[26:35] continues to pour money in them year-over-year. Um 
+so I think just trying to get because I've had an  
+[26:41] aspect of Gemini in me before. If the portfolio 
+on paper that I had went up and then went down,  
+[26:47] then it's like, well, I got to get it back up to 
+where it is. I got to hurry and get it back up.  
+[26:50] Well, you know, I'm not like 80 years old 
+yet, so I don't need to hurry right now. Yeah.  
+[26:56] But that's been inside me in the past. So, 
+it's helped me, I don't know, rewire my  
+[27:00] brain on that side. Yeah. And then on the on the 
+positive, on the when things are going upside,  
+[27:05] I think for sure that they've just done a good 
+job at like showing me, okay, this is my thesis  
+[27:11] on why I think you should, you know, buy this 
+and the Grock or Perplexi, whatever portfolio,  
+[27:17] and this is the return we're targeting in this 
+time frame. And but if this if the reason we're  
+[27:24] buying it doesn't happen, then we're going 
+to sell. And usually I don't think like  
+[27:30] I don't think that hard sometimes when I buy stuff 
+in mine because I might buy whatever I might buy.  
+[27:37] Let's for fun say Eli Liy. Guys, I want to tell 
+you about something I've been building behind the  
+[27:41] scenes. You've been watching my videos about 
+AI tools and asking the same question. Okay,  
+[27:45] cool. How do I turn this into a business? Not 
+just playing around with AI, but actually getting  
+[27:49] clients and getting paid. That's my community. 
+It's called Playmakers. playmakersai.com. It's  
+[27:54] an AI agency program where we show you how to 
+start an AI consulting business where you can  
+[28:00] charge local businesses $500 to $5,000 a month to 
+set up and manage AI tools for them. It's not a  
+[28:05] course you watch and forget about. We do three to 
+seven live training calls every week taught by me  
+[28:11] and 23 other expert AI agency owners. You get 
+plug-and-play templates, Cloud Code tutorials,  
+[28:17] AI voice agent frameworks, automation templates, 
+and a 30-day road map so you don't fall off track.  
+[28:22] This is stuff you can just copy, paste, and deploy 
+for clients on day one, and of course, how to find  
+[28:27] clients as well. We also have a 5-day first client 
+challenge where we can walk you through landing  
+[28:32] your first paying client in 5 days. You also get 
+my frameworks for cold email, Facebook ads, SMS,  
+[28:37] cold calls, and then I hand you my leads galore 
+spreadsheets with actual leads in your niche,  
+[28:42] in your area. We've already got over 200 
+people in there building real agencies.  
+[28:46] If you miss a live call, it's all recorded. 
+So, if you've ever thought about starting  
+[28:49] an AI consulting business or AI implementation 
+business, go check out playmakersai.com. Eli Liy  
+[28:56] does stuff with GLP1s and peptides, which I'm sure 
+is why you bought it. If for some reason though,  
+[29:02] those went away or came out that it's 
+a scam or they're actually bad for you,  
+[29:07] well then you should probably sell Eli Liy. 
+Yeah. If if that comes out because that current  
+[29:11] valuation is also based on the same thesis. 
+Yeah. So being more like, okay, I'm buying this  
+[29:17] because of why and it has to happen between 
+when. And some things don't have to happen in  
+[29:23] a certain time frame, but if you're buying some 
+potential drug that needs to like be approved,  
+[29:29] well, that there's like some time constraints 
+and some things that need to happen there.  
+[29:34] Whereas like Walmart, h doesn't really matter. 
+People just need to keep buying, you know, food  
+[29:39] and you'll be fine. Yeah. So thinking through 
+thesis more deeply has also been a thing that  
+[29:45] this little AI competition has helped me with. So 
+last year I posted an episode where I built this  
+[29:50] vibe coded tool called Neil stocks. Ne stocks 
+and it stands for network effects founder le.  
+[29:57] Okay. Only companies that enjoy network effects 
+which is a company that gets stronger based  
+[30:03] on how many people use it. Facebook has network 
+effects because the more people that join Facebook  
+[30:07] the more friends everyone on Facebook has. So 
+they're more likely to stay on there, right?  
+[30:12] And then founder, the data shows that companies, 
+publicly traded companies that are still founder,  
+[30:17] like Facebook, do better. They outperform. It's 
+their baby. They take good care of it. Yeah. So,  
+[30:22] I kind of put those two together and I vibe 
+coded this tool that uh back test data for me  
+[30:29] and it shows compared to the S S&P if I were to 
+spend $100 at IPO date for on a company that is  
+[30:37] NEL network effects founder led Robin Hood's 
+a great example there's still founder and they  
+[30:41] have a ton of network effects and at basically any 
+time frame it outperforms significantly the market  
+[30:48] but what the big question is is like when do you 
+buy when do you Sure, you can buy at IPO day.  
+[30:54] Like StubHub is Neil, right? It's it's network 
+effects. It's founderled. It they just went public  
+[30:59] last year, so I bought some. Yeah. It hasn't been 
+good so far, but it's like I'm going to hold it  
+[31:03] forever, so whatever. Yeah. But like if you aren't 
+able to buy at IPO day, which you're not usually,  
+[31:09] when do you buy? When do you sell? So, I would be 
+curious to do this test. Yeah. On a more specific  
+[31:14] thesis. Yeah. Same thing. Here's $1,000, five 
+models. Compete against each other. Don't be  
+[31:19] afraid to be risky, but only buy knuff stocks. 
+And it's a range, too, because like Google,  
+[31:24] like Sergey and and Larry Paige, they're like 
+on the board and they're influential. Amazon,  
+[31:29] Jeff Bezos is influential. Yeah. So, it's it's 
+not founderled, but it kind of is. Yeah. Yeah. So,  
+[31:34] I also have like a 1 to 10 scale for both of those 
+two variables, right? So, it's like here's the  
+[31:39] list of companies that cuz like Facebook would 
+be 10 out of 10 on both. Yeah. Easy. Yeah. Easy.  
+[31:45] And the return show it, right? Yeah. So, it's 
+like, "All right, here's the list. Here's the  
+[31:49] scale." So, you know, like where they are in this 
+range. Only invest in these stocks based on what  
+[31:54] you see in the scale and whatever. I'd just be 
+curious to see how well that does or not. Yeah.  
+[31:59] Yeah. No, that'd be cool. That'd be You should 
+do that test. That'd be awesome. I think I will.  
+[32:04] Yeah. So, what are what are the results? Yeah. 
+I'm glad you asked. Okay. I will pull them all  
+[32:10] up right now. So, Gemini's in last again. They 
+all started with a,000 bucks real money. Gemini  
+[32:15] is at $445. Grock is at $1451. So, it's up 45%. 
+I'm surprised by that. Yeah. In like 5 months.  
+[32:25] Perplexity is at $1,731 and Chetch is at $1,739. 
+Holy crap. 70% each. So, they're up 70% and they  
+[32:35] both own currently only they both own SOL, that 
+semiconductor triple leverage one. And then chat  
+[32:42] also owns the TQQQ, the triple leveraged NASDAQ 
+one. I meant to ask you this question earlier.  
+[32:47] What models are Perplexity using? Yeah. Yeah. 
+Perplexity, it doesn't seem to use Grock very  
+[32:53] much. So, it's usually using Claude, Opus, Chat, 
+and Gemini. And then every now and then it'll like  
+[33:02] I'll see like a random Chinese one of 
+those open source models. Yeah. Yeah. Okay.  
+[33:08] Yeah. But it's choosing which model to use. You're 
+not Yeah. No, it trudges. I I never tell it. So,  
+[33:13] yeah. Interesting. Yeah. So, they're both up a 
+little over 70%. Oh, I just refreshed it. Chat  
+[33:19] just went up another few bucks. Okay. Claude, 
+though, is at 2400 bucks. Yeah. So, 1,000  
+[33:26] has gone to 2400. And uh Yeah, Claude's killing 
+it. So, everybody just needs to try to catch  
+[33:31] up to Claude on here. Oh my gosh. Yeah. So, in 
+total, my 5,000 is like $7,800. Jeez Louise. Yeah.  
+[33:41] And that's with so Gemini being horrible%. Yeah. 
+Okay. Now, what is from the day you started, what  
+[33:48] is the market up or down? Oh, good question. Okay. 
+So, since I started, the S&P has gone from 6800  
+[33:56] to 7,100%. Yeah. So, S&P's up five. My AI group 
+together is up 60 and Claude is more than doubled.  
+[34:09] So overall, you've 12xed the market. Yeah. And 
+you've like 30xed unclog. Yeah. And I've been  
+[34:15] keeping my kids in the loop on this because I told 
+them that this is basically their college fund  
+[34:20] to basically or is is Yeah. This will cover one 
+semester for one of you. Two semesters at BYU.  
+[34:26] Yeah. Yeah. You know, cuz I've wanted to teach 
+them about stocks. Yeah. And and just investing in  
+[34:31] general. Um, but it's not always the most exciting 
+topic, but this is pretty exciting to them  
+[34:37] because I'm like, "Hey, look at Claude. Oh, look 
+at chat. Look at Oh, look what Google messed us  
+[34:42] up with, you know, Gemini." So, yeah, they are a 
+lot more excited to hear the weekly updates. Um,  
+[34:49] yeah. Than than I think they otherwise would have 
+been. Well, for my kids, I would love to have them  
+[34:53] do this. I will give them $100. They can split it 
+up between the five models or whatever. That way  
+[34:58] they can learn AI, they can learn prompting, 
+and they can learn investing allin-one. Yeah.  
+[35:03] Yeah. Totally. Yeah. And we'll charge 20% 
+interest. Yeah. Totally should. It's always  
+[35:08] good to charge your kids interest. Make them 
+learn how the real world works. Clip that. Yeah.  
+[35:15] Okay. So, to recap, it's been 6 months. It's not 
+over yet. Theoretically, you still could lose all  
+[35:20] your money. Yeah. But the market's been fairly 
+flat. At least, you know, in this market, 5% is  
+[35:25] is fairly flat. Yeah. But you've outperformed by 
+10 to 30x. Yeah. And I think that the next six  
+[35:32] months, the market is going to go up more than it 
+has. And I think that these holdings that they're  
+[35:39] in currently at least will even do more than what 
+the market will do over the next 6 months, too.  
+[35:45] So, it'll be interesting. I could do like a year 
+update with you uh to see what happens one year in  
+[35:51] or who won because uh yeah, I think it's going 
+to keep I think they're doing a good job. I think  
+[35:55] it's going to keep going up. Yeah, I recorded 
+another video like this where I did the same test  
+[35:59] but with one day expiring options. So, we'll link 
+to that. Well, Brandon, where can we find you?  
+[36:04] Brandon Doyle on on X and something like 
+that on Instagram and uh yeah, you can uh  
+[36:10] look us up on uh tkowners.com too if you want to 
+join a community with a bunch of entrepreneurs.  
+[36:17] Uh good times. Okay, thanks Brandon. Yeah, 
+thanks. If you like this content, please  
+[36:21] share with a friend, hit a like or a comment 
+below, and we'll see you next time on the Kerner
