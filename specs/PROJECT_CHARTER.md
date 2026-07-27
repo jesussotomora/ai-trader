@@ -3,7 +3,7 @@
 **Nombre del Proyecto:** `ai-trader`  
 **Autor / Owner:** Jesús Soto Mora (`jesussotomora`)  
 **Fecha de Creación:** 2026-07-27  
-**Estado:** Fase 0 — Investigación Completada & Carta del Proyecto Establecida  
+**Estado:** Fase 1 — Especificación Core & Motor de Backtesting Implementados  
 **Repositorio GitHub:** [https://github.com/jesussotomora/ai-trader](https://github.com/jesussotomora/ai-trader)
 
 ---
@@ -11,19 +11,24 @@
 ## 1. Visión del Proyecto y Objetivo Principal
 
 ### 🎯 Visión
-Crear una plataforma modular, automatizada e inteligente de trading e inversión (`ai-trader`) que combine **Modelos de Lenguaje de Gran Escala (LLMs)**, **Análisis de Sentimiento de Noticias**, **Indicadores Técnicos** y **Búsqueda Semántica Vectorial (RAG)** para ejecutar operaciones bursátiles y de criptomonedas con una gestión de riesgo profesional.
+Crear una plataforma modular, automatizada e inteligente de trading e inversión (`ai-trader`) que combine **Modelos de Lenguaje de Gran Escala (LLMs)**, **Análisis de Sentimiento de Noticias**, **Indicadores Técnicos**, **Búsqueda Semántica Vectorial (RAG)** y **Simulación de Backtesting Cuantitativo** para ejecutar operaciones bursátiles y de criptomonedas con una gestión de riesgo profesional.
 
 ### 🚩 Objetivo Principal
 Construir un motor de trading capaz de:
 1. **Poner a competir a múltiples modelos de IA (Modo Arena)** o **consolidar sus recomendaciones en un consejo asesor (Modo Consejo)**.
-2. Operar sin infringir los Términos de Servicio (ToS) de las suscripciones de los proveedores de IA (ChatGPT Plus, Claude Pro, Gemini Advanced, OpenCode Go).
-3. Estar optimizado para usuarios que residen en **México**, facilitando el fondeo en pesos (MXN vía SPEI) e integrando brokers modernos (Interactive Brokers, Alpaca y Bitso).
-4. Proteger estrictamente el capital del usuario mediante controles automatizados de riesgo (Stop-Loss, Take-Profit, límites por posición y disyuntores de drawdown).
+2. **Validar cuantitativamente las estrategias mediante Backtesting local** (`BacktestEngine`) sobre velas históricas OHLCV antes de ejecutar operaciones en vivo.
+3. Operar sin infringir los Términos de Servicio (ToS) de las suscripciones de los proveedores de IA (ChatGPT Plus, Claude Pro, Gemini Advanced, OpenCode Go).
+4. Estar optimizado para usuarios que residen en **México**, facilitando el fondeo en pesos (MXN vía SPEI) e integrando brokers modernos (Interactive Brokers, Alpaca y Bitso).
+5. Proteger estrictamente el capital del usuario mediante controles automatizados de riesgo (Stop-Loss, Take-Profit, límites por posición y disyuntores de drawdown).
 
 ---
 
 ## 2. Objetivos Específicos & Criterios de Éxito
 
+* **Motor de Backtesting Cuantitativo Integrado (`BacktestEngine`):**
+  * Simulación determinista de señales de IA (`TradeSignal`) sobre series de tiempo históricas (velas OHLCV).
+  * Evaluación en tiempo real de niveles de **Stop-Loss** y **Take-Profit**.
+  * Cálculo automático de métricas clave: **% Retorno Total**, **% Win Rate**, **% Máximo Drawdown**, **Profit Factor** y registro detallado de operaciones (*Executed Trades Log*).
 * **Soporte de Suscripciones Web Existentes:** Permitir al usuario usar sus suscripciones actuales (ej. Gemini Advanced activo, Claude Pro, ChatGPT Plus, OpenCode Go) a través de asistentes interactivos formateados en JSON y herramientas CLI oficiales, evitando gastos de API por token.
 * **Dualidad de Modos de Operación:**
   * **Modo A (Arena de Competencia):** Varios LLMs administran portafolios virtuales independientes compitiendo por rendimiento (Sharpe Ratio, Win Rate).
@@ -40,7 +45,7 @@ Construir un motor de trading capaz de:
 ## 3. Fuentes de Inspiración y Referencias
 
 1. **Video #1 (Lewis Menelaws - Trading Bot $10k Experiment):**
-   * *Referencia:* Demostración de bots de trading en Python (Momentum, Sentimiento de Noticias y Búsqueda Vectorial) usando Interactive Brokers.
+   * *Referencia:* Demostración de bots de trading en Python (Momentum, Sentimiento de Noticias y Búsqueda Vectorial) usando Interactive Brokers. **Inspiración fundamental para la implementación del motor de Backtesting y optimización cuantitativa.**
    * *Enlace:* [https://www.youtube.com/watch?v=zh008MNMOlo](https://www.youtube.com/watch?v=zh008MNMOlo)
 2. **Video #2 (The Koerner Office Podcast - 5 IAs con $5,000 USD de Dinero Real):**
    * *Referencia:* Competencia real de 6 meses entre Claude, ChatGPT, Gemini, Grok y Perplexity. Claude obtuvo **+140% de rendimiento** y el grupo superó al S&P 500 por 11x-12x (+56% vs +5%). Demuestra el valor de forzar tesis de inversión y reglas de salida.
@@ -53,7 +58,7 @@ Construir un motor de trading capaz de:
 
 ## 4. Metodología y Plan de Implementación (Cómo lo Haremos)
 
-El desarrollo del proyecto se dividirá en 5 capas arquitectónicas:
+El desarrollo del proyecto se divide en 5 capas arquitectónicas:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -72,6 +77,7 @@ El desarrollo del proyecto se dividirá en 5 capas arquitectónicas:
 │                    CAPA DE DATOS Y CONOCIMIENTO (RAG)                   │
 │    - NewsScraperService (newspaper3k + NewsAPI + Caching SQLite)        │
 │    - Financial RAG Engine (Vector DB + SEC 10-K + Indicadores Macro)     │
+│    - BacktestEngine (Simulación OHLCV, Win Rate, Drawdown, PnL)         │
 └────────────────────────────────────┬────────────────────────────────────┘
                                      │
 ┌────────────────────────────────────▼────────────────────────────────────┐
@@ -89,16 +95,18 @@ El desarrollo del proyecto se dividirá en 5 capas arquitectónicas:
 
 ---
 
-## 5. Índice de Investigación y Archivos Recolectados (`specs/misc/`)
+## 5. Planes de Desarrollo e Índices de Investigación
 
-Todos los documentos de investigación previa generados se encuentran organizados y sincronizados en Git dentro de `specs/misc/`:
+### 📋 Planes de Implementación (`docs/superpowers/plans/`)
+* 📄 **[2026-07-27-core-platform.md](https://github.com/jesussotomora/ai-trader/blob/main/docs/superpowers/plans/2026-07-27-core-platform.md):** Plan de desarrollo del núcleo del sistema (Schemas, Scraper, Compliance, Risk, Arena, Consejo, Integración).
+* 📄 **[2026-07-27-backtest-engine.md](https://github.com/jesussotomora/ai-trader/blob/main/docs/superpowers/plans/2026-07-27-backtest-engine.md):** Plan de desarrollo e integración del motor de Backtesting cuantitativo.
 
-* 📁 **[specs/misc/SUMMARY.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/SUMMARY.md):** Índice maestro y mapeo de toda la investigación preliminar.
-* 📄 **[specs/misc/youtube-zh008MNMOlo-analysis.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/youtube-zh008MNMOlo-analysis.md):** Análisis del video #1 (Lewis Menelaws - Trading Bot $10k).
-  * 📜 *Transcripción:* [specs/misc/youtube-zh008MNMOlo-transcript.txt](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/youtube-zh008MNMOlo-transcript.txt)
-* 📄 **[specs/misc/github-news-bot-analysis.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/github-news-bot-analysis.md):** Análisis del repositorio de scraping de noticias con `newspaper3k`.
+### 📁 Documentos de Especificaciones e Investigación (`specs/`)
+* 📄 **[specs/2026-07-27-ai-trader-core-architecture.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/2026-07-27-ai-trader-core-architecture.md):** Especificación técnica formal de la arquitectura del sistema.
+* 📁 **[specs/misc/SUMMARY.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/SUMMARY.md):** Índice maestro de investigación preliminar.
+* 📄 **[specs/misc/youtube-zh008MNMOlo-analysis.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/youtube-zh008MNMOlo-analysis.md):** Análisis del video #1 (Lewis Menelaws - Trading Bot $10k & Backtesting).
+* 📄 **[specs/misc/github-news-bot-analysis.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/github-news-bot-analysis.md):** Análisis del repositorio de scraping de noticias.
 * 📄 **[specs/misc/youtube-DKM94g3Hr_M-analysis.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/youtube-DKM94g3Hr_M-analysis.md):** Análisis del video #2 (Competencia de 5 IAs con $5k real money).
-  * 📜 *Transcripción:* [specs/misc/youtube-DKM94g3Hr_M-transcript.txt](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/youtube-DKM94g3Hr_M-transcript.txt)
-* 📄 **[specs/misc/ai-subscriptions-cost-benefit.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/ai-subscriptions-cost-benefit.md):** Matriz costo/beneficio de suscripciones web de IA (ChatGPT Plus, Claude Pro, Gemini, OpenCode Go, Kimi K3, Perplexity, DeepSeek, Qwen).
-* 📄 **[specs/misc/mexico-automated-trading-platforms.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/mexico-automated-trading-platforms.md):** Análisis de brokers, costos y automatización en México (IBKR, Alpaca, Bitso, fondeo SPEI).
-* 📄 **[specs/misc/llm-architecture-and-compliance.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/llm-architecture-and-compliance.md):** Especificación de cumplimiento ToS, taxonomía de modelos, rol de Gemini Advanced (infraestructura y contexto 2M), modos duales (Arena vs Consejo) y RAG financiero.
+* 📄 **[specs/misc/ai-subscriptions-cost-benefit.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/ai-subscriptions-cost-benefit.md):** Matriz costo/beneficio de suscripciones web de IA.
+* 📄 **[specs/misc/mexico-automated-trading-platforms.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/mexico-automated-trading-platforms.md):** Análisis de brokers, costos y automatización en México.
+* 📄 **[specs/misc/llm-architecture-and-compliance.md](file:///Users/jesussoto/development/projects/ai-trader/ai-trader/specs/misc/llm-architecture-and-compliance.md):** Especificación de cumplimiento ToS, taxonomía de modelos, rol de Gemini Advanced y modos duales.
