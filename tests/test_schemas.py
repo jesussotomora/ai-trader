@@ -1,6 +1,9 @@
 import pytest
 from pydantic import ValidationError
-from src.models.schemas import TradeSignal, SignalAction, AssetClass, PortfolioState
+from src.models.schemas import (
+    TradeSignal, SignalAction, AssetClass, PortfolioState,
+    HistoricalBar, BacktestResult, ExecutedTrade
+)
 
 def test_valid_trade_signal():
     signal = TradeSignal(
@@ -30,3 +33,43 @@ def test_invalid_confidence_score():
             invalidation_criteria="N/A",
             advisor_model="GPT-4o"
         )
+
+
+def test_backtest_result_schema():
+    bar = HistoricalBar(
+        timestamp="2026-07-26T10:00:00Z",
+        open=100.0,
+        high=105.0,
+        low=98.0,
+        close=104.0,
+        volume=10000.0
+    )
+    assert bar.close == 104.0
+
+    trade = ExecutedTrade(
+        ticker="AAPL",
+        action=SignalAction.BUY,
+        entry_price=100.0,
+        exit_price=105.0,
+        quantity=10.0,
+        pnl=50.0,
+        pnl_pct=5.0,
+        exit_reason="TAKE_PROFIT"
+    )
+    assert trade.pnl == 50.0
+
+    result = BacktestResult(
+        ticker="AAPL",
+        starting_capital=1000.0,
+        ending_capital=1050.0,
+        total_return_pct=5.0,
+        win_rate_pct=100.0,
+        max_drawdown_pct=2.0,
+        total_trades=1,
+        winning_trades=1,
+        losing_trades=0,
+        profit_factor=0.0,
+        executed_trades=[trade]
+    )
+    assert result.total_return_pct == 5.0
+
