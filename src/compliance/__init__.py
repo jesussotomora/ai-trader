@@ -1,1 +1,1 @@
-# compliance package
+"""Compliance layer package."""
