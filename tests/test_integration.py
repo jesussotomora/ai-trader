@@ -1,8 +1,9 @@
-from src.models.schemas import PortfolioState, SignalAction
+from src.models.schemas import PortfolioState, SignalAction, HistoricalBar, TradeSignal
 from src.data.news_scraper import NewsScraperService, ArticleData
 from src.compliance.prompt_builder import PromptPackageBuilder, ResponseParser
 from src.risk.risk_manager import RiskManager
 from src.engine.council import AdvisoryCouncil
+from src.engine.backtest import BacktestEngine
 
 
 def test_full_pipeline_flow(tmp_path):
@@ -62,3 +63,27 @@ def test_full_pipeline_flow(tmp_path):
 
     assert approved
     assert "approved" in msg.lower()
+
+
+def test_integration_with_backtest_engine():
+    bars = [
+        HistoricalBar(timestamp="2026-07-01", open=50.0, high=52.0, low=49.0, close=51.0, volume=5000.0),
+        HistoricalBar(timestamp="2026-07-02", open=51.0, high=60.0, low=50.0, close=58.0, volume=5000.0),  # Hits Take Profit at 55
+    ]
+    signals = [
+        TradeSignal(
+            ticker="AMD",
+            action=SignalAction.BUY,
+            confidence_score=80.0,
+            stop_loss=48.0,
+            take_profit=55.0,
+            reasoning_thesis="Integration test",
+            invalidation_criteria="N/A",
+            advisor_model="Consensus"
+        )
+    ]
+    engine = BacktestEngine()
+    result = engine.run_simulation(ticker="AMD", starting_capital=2000.0, bars=bars, signals=signals)
+    assert result.total_return_pct > 0
+    assert result.win_rate_pct == 100.0
+
