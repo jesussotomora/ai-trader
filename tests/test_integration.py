@@ -1,4 +1,5 @@
 from unittest.mock import patch, MagicMock
+from fastapi.testclient import TestClient
 from src.models.schemas import PortfolioState, SignalAction, HistoricalBar, TradeSignal
 from src.data.news_scraper import NewsScraperService, ArticleData
 from src.compliance.prompt_builder import PromptPackageBuilder, ResponseParser
@@ -8,6 +9,7 @@ from src.engine.backtest import BacktestEngine
 from src.brokers.alpaca_adapter import AlpacaAdapter
 from src.data.market_data import MarketDataService
 from src.compliance.cli_assistant import CLIAssistant
+from src.web.app import app
 
 
 def test_full_pipeline_flow(tmp_path):
@@ -130,6 +132,14 @@ def test_cli_assistant_integration():
     prompt = assistant.prepare_prompt_package("MSFT", mock_text="Microsoft cloud revenue grows 25%")
     assert "MSFT" in prompt
     assert "Microsoft cloud revenue grows 25%" in prompt
+
+
+def test_web_app_integration():
+    client = TestClient(app)
+    res = client.get("/")
+    assert res.status_code == 200
+    assert "ai-trader Platform Dashboard" in res.text
+
 
 
 
