@@ -1,6 +1,6 @@
 # Architectural Specs: Compliant LLM Integration, Model Selection & Dual Operating Modes
 
-**Document Purpose:** Define ToS-compliant usage of web subscriptions, specify supported LLMs (including Kimi K3 & OpenCode Go), detail the dual execution modes (Arena Competition vs. Advisory Council), and refine sentiment/semantic strategy logic.
+**Document Purpose:** Define ToS-compliant usage of web subscriptions, specify supported LLMs (defining Gemini Advanced's primary role as Core Infrastructure & Long-Context Analyst), detail the dual execution modes (Arena Competition vs. Advisory Council), and refine sentiment/semantic strategy logic.
 
 ---
 
@@ -30,6 +30,7 @@ We will support the following flagship models across platforms:
 
 | Model Family | Primary Strength in `ai-trader` | Subscription Tier |
 | :--- | :--- | :--- |
+| **Google Gemini Advanced (Active User Sub)** | **Core Infrastructure, Codebase Architecture & Massive 2M Context Analysis.** Reads 500-page SEC 10-K filings, earnings transcripts, and generates fast code/docs. *(Excluded from solo trade decisions until risk-bounded)*. | Gemini AI Premium (Active) |
 | **Claude 3.5 / 3.7 Sonnet & Opus** | Code architecture, deep financial report analysis, structured JSON outputs | Claude Pro ($20/mo) |
 | **Kimi K3 (Moonshot AI)** | 1M token context, Agent Swarm, Kimi Code, complex codebase search | Kimi Moderato ($19/mo) or OpenCode Go ($10/mo) |
 | **OpenCode Go Suite (Kimi K3, DeepSeek V4, Qwen 3.7, Grok)** | Open CLI Gateway for multi-model terminal agent execution | OpenCode Go ($10/mo) |
@@ -37,11 +38,23 @@ We will support the following flagship models across platforms:
 | **DeepSeek R1 / V3 / V4** | Multi-step mathematical reasoning, cost-free logic verification | DeepSeek Web (Free) or OpenCode Go |
 | **Qwen 2.5 / 3 / 3.7 Max** | Algorithmic code review, quantitative analysis | Qwen Chat (Free) or OpenCode Go |
 | **Perplexity Pro (Sonar/GPT/Claude)** | Real-time web news aggregation, sentiment validation | Perplexity Pro ($20/mo) |
-| **Gemini 1.5 / 3.0 Pro** | Massive 2M context analysis (entire SEC 10-K filings + earnings calls) | Gemini AI Pro ($19.99/mo) |
 
 ---
 
-## 3. Dual Operating Modes
+## 3. Gemini Advanced Role in System Architecture
+
+Given the user's active **Gemini Advanced subscription**, Gemini will serve as the **Primary Infrastructure & Analysis Workhorse**:
+
+1. **Massive Context Reading (2M Token Window):**
+   * Parsing complete annual SEC 10-K / 10-Q reports, balance sheets, and full earnings call transcripts in a single prompt.
+2. **Fast Code Generation & System Refactoring:**
+   * Rapidly drafting Python boilerplate, API adapters, UI components, and markdown documentation due to high inference speed.
+3. **Fundamental Risk Auditor (Non-Trading Advisor):**
+   * Acts as a fundamental auditor evaluating whether a company's debt-to-equity ratio, cash flow, or SEC risk disclosures flag hidden dangers before trades execute.
+
+---
+
+## 4. Dual Operating Modes
 
 `ai-trader` will natively support two distinct operating modes:
 
@@ -61,7 +74,7 @@ We will support the following flagship models across platforms:
      ▼                 ▼                 ▼           ▼                 ▼                 ▼
  ┌───────┐         ┌───────┐         ┌───────┐   ┌───────┐         ┌───────┐         ┌───────┐
  │Claude │         │Kimi K3│         │DeepS. │   │ Tech. │         │ Fund. │         │ Senti.│
- │ Bot   │         │ Bot   │         │ Bot   │   │Analyst│         │Analyst│         │Analyst│
+ │ Bot   │         │ Bot   │         │ Bot   │   │Analyst│         │ (Gemini)        │Analyst│
  └───┬───┘         └───┬───┘         └───┬───┘   └───┬───┘         └───┬───┘         └───┬───┘
      │                 │                 │           └─────────────────┼─────────────────┘
      ▼                 ▼                 ▼                             ▼
@@ -73,26 +86,13 @@ We will support the following flagship models across platforms:
 ```
 
 ### Mode A: Multi-LLM Arena (Competition Mode)
-* **Concept:** Inspired by Video #2 (5 AIs with $1K real money).
-* **Execution:**
-  * Each LLM (Claude, Kimi K3, GPT-4, DeepSeek, Qwen, Grok) manages an isolated virtual portfolio (e.g. $1,000 USD virtual capital).
-  * Models compete on Sharpe Ratio, Win Rate, and Total Return over daily/weekly cycles.
-  * Leaderboard tracks performance live, allowing users to discover which model excels in current market regimes.
+* Each competing LLM manages an isolated virtual portfolio (e.g. $1,000 USD virtual capital).
+* Gemini can participate in Arena mode once strict risk-bounding rules (max drawdown, position limits) are enabled.
 
 ### Mode B: Advisory Council (Consensus Mode)
-* **Concept:** Collaborative multi-agent decision making.
 * **Specialist Roles:**
   1. **Technical Analyst (e.g. Qwen / GPT):** Analyzes Price Action, Moving Averages, RSI, MACD, Volume.
-  2. **Fundamental Analyst (e.g. Gemini / Kimi K3 / Claude):** Analyzes P/E ratios, earnings growth, SEC filing risks.
+  2. **Fundamental Auditor (Gemini Advanced):** Uses 2M token context to review 10-K filings, debt, cash flows, and SEC warnings.
   3. **Sentiment & Macro Analyst (e.g. Perplexity / DeepSeek):** Scrapes live news, social sentiment, macro interest rate trends.
   4. **Risk Manager Guardrail:** Enforces stop-loss limits, position sizing, and drawdown protection.
 * **Consensus Synthesizer (Chairman LLM):** Weighs all advisor scores into a single final confidence score (0 to 100) and outputs a single executable trade order.
-
----
-
-## 4. Refining Video #1: Discarding Gimmicks for Real RAG
-
-* **Replacing Taylor Swift Gimmick:** In Video #1, matching news to Taylor Swift lyrics was purely for YouTube entertainment.
-* **Real Semantic RAG Engine:** We replace lyric matching with a **Financial Knowledge Base**:
-  * Vector search news articles against **SEC 10-K Risk Factors**, **Company Guidance Notes**, **Financial Glossary Definitions**, and **Macro Economic Indicators**.
-  * Use semantic vector similarity (Cosine distance via Qdrant/ChromaDB/Astra DB) to score how news impacts specific corporate fundamentals.
