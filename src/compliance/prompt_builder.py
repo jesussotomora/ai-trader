@@ -9,22 +9,30 @@ class PromptPackageBuilder:
     def build_analysis_prompt(
         self,
         ticker: str,
-        news_summary: str,
-        current_price: float,
+        news_summary: str = "",
+        current_price: float = 0.0,
         pe_ratio: Optional[float] = None,
+        news_headline: Optional[str] = None,
+        full_text_summary: Optional[str] = None,
+        technical_indicators: Optional[dict] = None,
     ) -> str:
+        summary = full_text_summary or news_summary
+        headline_str = f"HEADLINE: {news_headline}\n" if news_headline else ""
+        price_str = f"${current_price:.2f}" if current_price else "N/A"
         pe_str = f"{pe_ratio:.2f}" if pe_ratio else "N/A"
+        tech_str = f"\nTECHNICAL INDICATORS:\n{json.dumps(technical_indicators, indent=2)}\n" if technical_indicators else ""
+
         return f"""
 YOU ARE A PROFESSIONAL FINANCIAL ANALYST.
 Analyze the following asset and respond ONLY with a valid JSON object.
 
 ASSET TICKER: {ticker}
-CURRENT PRICE: ${current_price:.2f}
+CURRENT PRICE: {price_str}
 P/E RATIO: {pe_str}
-
+{headline_str}
 RECENT NEWS SUMMARY:
-{news_summary}
-
+{summary}
+{tech_str}
 YOUR RESPONSE MUST STRICTLY MATCH THIS JSON SCHEMA:
 {{
     "ticker": "{ticker}",
