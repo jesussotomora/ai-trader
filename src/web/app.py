@@ -69,7 +69,7 @@ def run_backtest(req: BacktestRequest):
         )
     ]
     res = backtest_engine.run_simulation(req.ticker, req.starting_capital, bars, signals)
-    return res.dict()
+    return res.model_dump()
 
 
 @app.post("/api/prompt")
